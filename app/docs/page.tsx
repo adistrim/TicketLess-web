@@ -1,5 +1,3 @@
-"use client";
-
 import { Book, Construction } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
