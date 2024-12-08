@@ -10,7 +10,7 @@ export const developers: DeveloperProfile[] = [
     },
     {
         name: "Priyanshu Joshi",
-        role: "ML Engineer",
+        role: "Backend Dev",
         githubUsername: "imp-joshi",
         linkedinUsername: "imp-joshi",
         avatarUrl: "https://github.com/imp-joshi.png",
