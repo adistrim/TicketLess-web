@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from './mode-toggle';
@@ -10,14 +12,25 @@ import {
     SheetHeader,
     SheetTitle,
 } from "@/components/ui/sheet";
+import { useToast } from '@/hooks/use-toast';
 
 export function NavBar() {
+    const { toast } = useToast();
+
     const NavItems = () => (
         <>
             <Link href="/docs">
                 <Button variant="ghost">Documentation</Button>
             </Link>
-            <Button variant="outline">Sign In</Button>
+            <Button 
+                variant="outline" 
+                onClick={() => toast({
+                    title: "Coming Soon",
+                    description: "Sign in functionality will be available soon!",
+                })}
+            >
+                Sign In
+            </Button>
             <Button>Get Started</Button>
         </>
     );

@@ -20,7 +20,7 @@ export default function DocsComingSoon() {
                     <Alert className="hidden md:block border-primary/20 bg-primary/5 mx-2 md:mx-0">
                         <Construction className="h-4 w-4 text-primary flex-shrink-0" />
                         <AlertDescription className="ml-2 text-sm md:text-base">
-                            Expected release: Q4 2024. Check back soon for detailed guides, API references, and best practices.
+                            Expected release: Q2 2025. Check back soon for detailed guides, API references, and best practices.
                         </AlertDescription>
                     </Alert>
                 </div>

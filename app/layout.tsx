@@ -2,6 +2,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { NavBar } from "@/components/nav-bar"
 import Footer from "@/components/footer"
+import { Toaster } from "@/components/ui/toaster"
 
 export const metadata = {
   title: {
@@ -41,6 +42,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   )
