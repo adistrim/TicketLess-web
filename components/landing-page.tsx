@@ -12,6 +12,7 @@ import {
     ArrowRight,
     Sparkles,
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function LandingPage() {
     return (
@@ -36,9 +37,11 @@ export default function LandingPage() {
                             Empower your events with customizable ticketing, flexible payments, and powerful management tools.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 pt-4 w-full sm:w-auto px-4">
-                            <Button size="lg" className="group w-full sm:w-auto">
-                                Try Ticketless Beta
-                                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                            <Button size="lg" className="group w-full sm:w-auto" asChild>
+                                <Link href="/try-ticketless">
+                                    Try Ticketless Beta
+                                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                </Link>
                             </Button>
                         </div>
                     </div>
@@ -157,9 +160,12 @@ export default function LandingPage() {
                             size="lg"
                             variant="secondary"
                             className="group font-medium w-full sm:w-auto hover:bg-background/95 dark:hover:bg-background/90"
+                            asChild
                         >
-                            Get Started Now
-                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                            <Link href="/try-ticketless">
+                                Get Started Now
+                                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                            </Link>
                         </Button>
                     </div>
                 </div>

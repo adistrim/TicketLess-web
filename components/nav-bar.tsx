@@ -31,7 +31,9 @@ export function NavBar() {
             >
                 Sign In
             </Button>
-            <Button>Get Started</Button>
+            <Link href="/try-ticketless">
+                <Button>Get Started</Button>
+            </Link>
         </>
     );
 
